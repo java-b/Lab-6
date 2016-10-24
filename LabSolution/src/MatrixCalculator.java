@@ -71,11 +71,11 @@ public class MatrixCalculator {
      *
      */
     public static void validate(){
-        if(equal(calculate("[1,2,3;4,5,6;7,8,9]*[1,1;2,2;3,3]"),new int[][]{{14,14},{32,32},{50,50}}))
+        if(!equal(calculate("[1,2,3;4,5,6;7,8,9]*[1,1;2,2;3,3]"),new int[][]{{14,14},{32,32},{50,50}}))
             System.out.println("You failed to calculate the dot product of two matrices");
         else
             System.out.println("You have calculated the dot product of two matrices correctly");
-        if(equal(calculate("[1,2,3;4,5,6]+[9,8,7;6,5,4]"),new int[][]{{10,10,10},{10,10,10}}))
+        if(!equal(calculate("[1,2,3;4,5,6]+[9,8,7;6,5,4]"),new int[][]{{10,10,10},{10,10,10}}))
             System.out.println("You failed to calculate the sum of two matrices");
         else
             System.out.println("You have calculated the sum of two matrices correctly");
